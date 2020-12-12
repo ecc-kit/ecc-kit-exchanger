@@ -1,0 +1,33 @@
+{
+    "name": "ecc-kit/ecc-kit-exchanger",
+    "description": "",
+    "keywords": [
+        "money ",
+        "currency",
+        "exchange"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Korshunov",
+            "email": "sergey@korshunov.pro"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.2"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "EccKit\\Exchanger\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
