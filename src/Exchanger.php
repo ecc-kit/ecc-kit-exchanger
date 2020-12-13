@@ -31,15 +31,13 @@ abstract class Exchanger
     /**
      * Convert.
      *
-     * @param float    $value        Money
-     * @param Currency $srcCurrency  Source Currency
+     * @param Money    $money        Money
      * @param Currency $destCurrency Destination Currency
      *
      * @return Money
      */
     abstract protected function convert(
-        float $value,
-        Currency $srcCurrency,
+        Money $money,
         Currency $destCurrency
     ): Money;
 }

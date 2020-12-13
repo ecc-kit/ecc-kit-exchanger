@@ -33,13 +33,14 @@ class CurrencyExchanger extends Exchanger
      *
      * @return Money
      */
-    protected function convert(float $value, Currency $srcCurrency, Currency $destCurrency): Money
+    protected function convert(Money $money, Currency $destCurrency): Money
     {
         /** @todo: convert code */
         
         return new Money(
-            $value,
-            $destCurrency
+            $money->getValue(),
+            $destCurrency,
+            $money->getCalculator()
         );
     }
 }
